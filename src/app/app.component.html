@@ -1,9 +1,26 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>LocalCast Weather</h1>
-  <div>Your city,your forecat,right now!</div>
-  <h2>Current Weather</h2>
-  <div>
-      <app-current-weather></app-current-weather>
+<mat-toolbar color="primary">
+  <span>LocalCast Weather</span>
+</mat-toolbar>
+<div fxLayout="row">
+
+  <div fxFlex></div>
+
+  <div fxFlex="300px">
+
+    <div fxLayoutAlign="center">
+      <div class="mat-caption vertical-margin">Your city,your forecat,right now!</div>
+    </div>
+    <mat-card>
+      <mat-card-title  class="mat-typography">
+        <div class="mat-headline">Current Weather</div>
+      </mat-card-title>
+      <mat-card-content>
+        <div>
+          <app-current-weather></app-current-weather>
+        </div>
+      </mat-card-content>
+    </mat-card>
   </div>
+  <div fxFlex></div>
 </div>
